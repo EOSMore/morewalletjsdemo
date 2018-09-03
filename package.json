@@ -1,9 +1,9 @@
 {
-  "name": "react-template-cra",
+  "name": "morewalletdapp",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "morewallet.js": "^1.0.3",
+    "morewallet.js": "^1.0.4",
     "morex": "^1.2.2",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",

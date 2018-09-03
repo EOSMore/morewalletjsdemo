@@ -12,7 +12,7 @@ class Transfer extends Component {
       contract: 'eosio.token',
       to: 'uknowwhoamme',
       quantity: '1.0000 EOS',
-      memo: 'hi baby'
+      memo: 'memo'
     })
   }
 
