@@ -49,28 +49,10 @@ class Index extends Component {
     }
   ]
 
-  async getAccount() {
-    try {
-      const account = await this.state.client.getAccount();
-      alert(account.account_name);
-    } catch (e) {
-      alert("出错了：" + e);
-    }
-  }
-
   getAppVersion = async () => {
     try {
       const version = await this.props.client.getAppVersion()
       actions.app.setVersion(version)
-    } catch (e) {
-      alert("出错了：" + e);
-    }
-  }
-
-  async checkAction() {
-    try {
-      const res = await this.state.client.checkAction("eosio.token", "transfer");
-      alert("检查：" + res);
     } catch (e) {
       alert("出错了：" + e);
     }
@@ -81,37 +63,6 @@ class Index extends Component {
     actions.app.setInApp(res)
   }
 
-  async transfer() {
-    try {
-      const res = await this.state.client.transfer("eosio.token", "uknowwhoamme", "1.0000 EOS", "hi baby");
-      alert("转账：" + res);
-    } catch (e) {
-      alert("出错了：" + e);
-    }
-  }
-
-  async getCurrencyBalance() {
-    try {
-      const balance = await this.state.client.getCurrencyBalance("eosio.token", "EOS");
-      alert(balance);
-    } catch (e) {
-      alert("出错了：" + e);
-    }
-  }
-
-  async getGlobal() {
-    try {
-      const globalInfo = await this.state.client.getTableRows({
-        json: true,
-        code: "eosio",
-        scope: "eosio",
-        table: "global"
-      });
-      alert(JSON.stringify(globalInfo));
-    } catch (e) {
-      alert("出错了：" + e);
-    }
-  }
 
   async pushActions() {
     const { client } = this.props
