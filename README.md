@@ -31,7 +31,7 @@
 - [首页](http://wokeyi.club)
 
 
-![](https://public.bitzhidao.com/screenshot/index.jpg)
+![](https://public.bitzhidao.com/screenshot/new_index.jpg)
 
 
 
