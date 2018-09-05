@@ -24,7 +24,7 @@
 - 添加DApp名称，URL和所需权限等信息（具体操作流程：[MORE Wallet】DAPP上线接入指南](https://mp.weixin.qq.com/s/rRJiDJOT_DBWRp78jhxWcg)）
 
 
-![](https://public.bitzhidao.com/screenshot/add_dapp.jpg)
+![](https://public.bitzhidao.com/screenshot/new_add_dapp.jpg)
 
 
 
